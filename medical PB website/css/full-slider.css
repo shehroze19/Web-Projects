@@ -1,0 +1,22 @@
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+
+
+  /* Hide captions class  */
+  .carousel-caption {
+     display: block !important;
+  }
+}
+

@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo-container">
+        <img class="logo" src="./images/logo.svg" alt="logo"/>
+      </div>
+      <div class="login-signup-container">
+        <div class="login-btn-container">
+          <button class="btn login-btn">Login</button>
+        </div>
+        <div class="signup-btn-container">
+          <button class="btn signup-btn">Signup</button>
+        </div>
+      </div>
+    </nav>
+    <section class="content-container">
+      <div class="tabbed-navigation">
+        <a class="tab-link" href="./index.html">
+          <div class="tab home-tab">
+            <img class="tab-icon" src="./images/home.png" alt="home icon"/>
+            <h5 class="tab-text">Home</h5>
+          </div>
+        </a>
+        <a class="tab-link" href="./payment.html">
+          <div class="tab payment-tab">
+            <img class="tab-icon" src="./images/payment.png" alt="payment icon"/>
+            <h5 class="tab-text">Payment</h5>
+          </div>
+        </a>
+      </div>
+      <div class="slider-container">
+        <div class="search-form-container">
+          <form class="search-form-and-button-container">
+            <div class="search-icon-container">
+              <img src="./images/search.png"  alt="search icon" class="search-icon">
+            </div>
+            <div>
+              <div class="f-input-control">
+                <input type="text" name="s-input" class="form-control f-input" placeholder="Find ..." required autofocus>
+              </div>
+            </div>
+            <div class="search-button-container">
+              <button class="hero-search-button">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    var toggle = false;
+    var slider = document.getElementsByClassName("slider-container")[0];
+
+    function toggleValue() {
+        toggle = !toggle;
+      }
+
+    setInterval(function() {
+      toggleValue();
+      if (toggle == true) {
+        slider.style.backgroundImage = 'url(./images/slider2.jpg)';
+      } else {
+        slider.style.backgroundImage = 'url(./images/slider1.jpg)';
+      }
+    }, 4000);
+  </script>
+</html>
