@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Robert M. Siegfried, Ph. D.</title>
+
+	<!-- Bootstrap core CSS-->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template-->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Page level plugin CSS-->
+	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+	<!-- Custom styles for this template-->
+	<link href="css/sb-admin.css" rel="stylesheet">
+
+
+	<script>
+
+		function changeSize(n) {
+
+
+
+			var all = document.getElementsByClassName('change_color');
+			for (var i = 0; i < all.length; i++) {
+				all[i].style.fontSize = n.value + 'px';
+			}
+
+
+
+		}
+
+		function changeColor(n) {
+
+			var all = document.getElementsByClassName('change_color');
+			for (var i = 0; i < all.length; i++) {
+				all[i].style.color = n.value;
+			}
+
+		}
+
+
+
+
+		function changeBGColor(n) {
+
+			var s = document.getElementById('page-top');
+			s.style.backgroundColor  = n.value;
+		}
+
+
+	</script>
+
+
+
+	<style>
+		#logo{
+
+
+			background-image: url("img/adelphi.png");
+			width: 208px;
+			height: 100px;
+
+
+		}
+		#logo:hover{
+			background-image: url("img/hover_logo.png");
+		}
+
+		.changer{
+			color: white;
+
+		}
+
+
+		@media only screen and (max-width: 600px) {
+			#responsive_mobile_1{
+				display: none;
+			}
+			#responsive_mobile_2{
+				display: none;
+			}
+			
+		}
+
+		select { text-indent: 80px; }
+
+	</style>
+</head>
+
+<body id="page-top" >
+
+
+
+
+
+	<nav class="navbar navbar-expand  static-top" style="background-color:#4f2c1d;" >
+
+		<a class="navbar-brand mr-1" id="sidebarToggle" href="#"><div id="logo" height="100" width="208"></div>
+
+
+		</a> <i  style="color: gray;" class="fas fa-bars"></i>
+
+
+
+
+
+		<div id="responsive_mobile_1" class="col-md-2"></div>
+
+		<div id="responsive_mobile_2">
+
+			<table id="main_data">
+				<tbody>
+
+					<tr>
+						<td>
+							<h3 align="CENTER" ><i class="changer">Robert M. Siegfried, Ph. D.</i></h3>
+
+							<h5 class="text-center" ><a  href="http://academics.adelphi.edu/artsci/math" style="color: #ffb500"  target="_blank">Department of Mathematics and Computer Science</a></h5>
+
+							<h5 class="text-center"><a href="http://www.adelphi.edu/" style="color: #ffb500" target="_blank">Adelphi University</a>,
+								<a href="http://www.gardencityny.net/" style="color: #ffb500" target="_blank" >Garden City, NY  11530</a>,
+							</h5>
+
+
+						</td>
+					</tr>
+
+				</tbody></table>
+
+			</div>
+
+			<!-- Navbar Search -->
+			<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+				<div class="input-group">
+					<div class="input-group-append">
+
+					</div>
+				</div>
+			</form>
+
+		
+
+		</nav>
+
+		<div id="wrapper">
+
+			<!-- Sidebar -->
+			<ul class="sidebar navbar-nav">
+
+
+				<! –– drop down button for account settings -->
+				<li class="nav-item dropdown">
+					<!-- Button trigger modal -->
+					<a type="button" class="nav-link dropdown-toggle" data-toggle="modal" data-target="#exampleModal" aria-haspopup='true' aria-expanded='false'>
+						<i class='fas fa-cog'></i>
+						Page Settings
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">
+						<i class="fas fa-home"></i>
+						<span>Background</span>
+					</a>
+				</li>
+
+
+
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="schedule.html">
+						<i class="fas fa-calendar-alt"></i>
+						<span>Schedule</span>
+					</a>
+				</li>
+
+
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="teaching.html">
+						<i class="fas fa-chalkboard-teacher"></i>
+						<span>Teaching</span>
+					</a>
+				</li>
+
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="research.html">
+						<i class="fas fa-search"></i>
+						<span>Research</span>
+					</a>
+				</li>
+
+
+
+				<li class="nav-item active">
+					<a class="nav-link" href="publications.html">
+						<i class="fas fa-book"></i>
+						<span>Publications</span>
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="molly.html">
+						<i class="fas fa-project-diagram"></i>
+						<span>The Molly Project</span>
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="personal.html">
+						<i class="fas fa-user-check"></i>
+						<span>Personal</span>
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="links.html">
+						<i class="fas fa-link"></i>
+						<span>Links</span>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">
+						<i class="fas fa-address-book"></i>
+						<span>Contact</span>
+					</a>
+				</li>
+
+
+
+				<li class='nav-item dropdown'>
+					<a class='nav-link dropdown-toggle' href='#' id='pagesDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+						<i class='fas fa-fw fa-folder'></i>
+						<span>Courses</span>
+					</a>
+					<div class='dropdown-menu' aria-labelledby='pagesDropdown'>
+						<h6 class='dropdown-header text-center'>Teaching Courses</h6>
+
+
+
+
+						<hr>
+						<a class='dropdown-item text-center' target="_blank" href="https://home.adelphi.edu/~siegfried/cs175/index.html">CSC 175 - Intermediate<br>Programming</a>
+
+
+						<hr>
+						<a class='dropdown-item text-center' target='_blank' href="https://home.adelphi.edu/~siegfried/cs453/index.html">CSC 453 - Operating<br>Systems</a>
+
+
+						<hr>
+						<a class='dropdown-item text-center' target="_blank" href="https://home.adelphi.edu/~siegfried/cs575/index.html">CSC 575 - Accessible<br>Computing</a>
+
+
+						<hr>
+						<a class='dropdown-item text-center' target='_blank' href="https://home.adelphi.edu/~siegfried/cs645/index.html">CSC 645 - Compiler<br>Construction</a>
+
+
+
+					</div>
+				</li>
+
+
+			</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div id="content-wrapper">
+
+				<div class="container-fluid">
+
+					<!-- Breadcrumbs--> 
+					<ol class='breadcrumb'>
+						<li class='breadcrumb-item'>
+							<a href='#'>Dashboard</a>
+						</li>
+						<li class='breadcrumb-item active'>Publications </li>
+<hr>
+					<audio controls class="form-control">
+  <source src="play/publications.mp3"  type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+					</ol>
+
+			
+
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Change Page Settings</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+
+
+									<div class="row">
+										<div  class="col-md-2">Font Size</div>
+										<div class="col-md-2">
+											<select class="form-control" class="text-center"  onchange="changeSize(this);">
+												<option class="text-center">4</option>
+												<option>8</option>
+												<option>12</option>
+												<option>16</option>
+												<option>20</option>
+												<option>24</option>
+												<option>28</option>
+												<option>32</option>
+												<option>36</option>
+												<option>40</option>
+												<option>44</option>
+												<option>48</option>
+												<option>52</option>
+												<option>56</option>
+												<option>58</option>
+											</select>
+										</div>
+
+										<hr>
+
+										<div  class="col-md-2" >Font Color</div>
+
+										<div class="col-md-2">
+											<input type="color" id="favcolor" class="form-control" name="favcolor" value="#ff0000" onchange="changeColor(this);">
+										</div>
+
+
+
+										<div  class="col-md-2">BG Color</div>
+
+										<div class="col-md-2">
+											<input type="color" id="favcolor" class="form-control" name="favcolor" value="#ff0000" onchange="changeBGColor(this);">
+										</div>
+
+										<div class="col-md-12"><br></div>
+										<div class="btn btn-block btn-primary"><a href="" style="color: black;">To reset page settings reload the page or click here</a></div>
+
+
+									</div>
+
+
+
+
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="change_color">
+
+<h3 class="normalhead">Publications</h3> 
+<p>Robert M. Siegfried, Katherine Herbert-Berger, and Jason P. Siegfried, 
+Poster: <a href="https://home.adelphi.edu/~siegfried/SIGCSE2020Poster.pdf">"CS2 and The Impact of Programming Language
+Choice"</a>. <a href="https://home.adelphi.edu/~siegfried/SIGCSE2020ExtAbst.pdf">Extended Abstract</a> appearing in
+<b>Proceedings of the 51st ACM Technical Symposium on Computer Science
+Education</b>, (Portland, OR, USA, March 11-14, 2020), p. 1353. </p> 
+<p>Robert M. Siegfried, Diane Liporace, and Katherine G. Herbert-Berger, 
+Poster:<a href="https://home.adelphi.edu/~siegfried/SIGCSE2019Poster.pdf">"What Can the Reid List of First
+Programming Languages Teach Us About Teaching CS1?"</a>. 
+<a href="https://dl.acm.org/doi/abs/10.1145/3287324.3293830#.XqHEAUDStmQ.email">
+Abstract</a> appearing in <b>Proceedings of the 50th ACM Technical Symposium
+on Computer Science Education</b> (Minneapolis, MN, USA - February 27, March 2,
+2019), p.  1256-1257.
+
+
+</p><p>Robert M. Siegfried, Jason P. Siegfried, Gina Alexandro,
+<a href="http://isedj.org/2016-14/n6/ISEDJv14n6p47.html">"A Longitudinal
+Analysis of the Reid List of First Programming Languages"</a>,<b>Information
+Systems Education Journal 14(6)</b>, p.47-54.
+<a href="http://isedj.org/2016-14/"> http://isedj.org/2016-14</a>
+ISSN: 1545-679X.
+(A preliminary version appears in <b>The Proceedings of the EDSIG 2015 </b>,
+§3465.)</p> 
+<p>Robert M. Siegfried and Joseph G. Featherston, 
+<a href="http://proc.conisar.org/2014/pdf/3324.pdf">"Are College Home Pages More
+Accessible? A Longitudinal Study of the Accessibility of United States College
+Home Pages "</a>, <b>The Proceedings of the Conference
+On Information Systems Applied Research v. 7</b> (November 6-9, 2014, Baltimore,
+Maryland), §3324.
+</p><p>Robert M. Siegfried,
+<a href="http://proc.conisar.org/2013/pdf/2823.pdf">
+"Does File Sharing Lead To Legal Sales? Student
+Attitudes On Music Piracy"</a>, <b>The Proceedings of the Conference
+On Information Systems Applied Research v. 6</b> (November 8-10, 2013, San Antonio, Texas), §2823.
+</p><p>Robert M. Siegfried, Daniel M. Greco, Nicholas G. Miceli, Jason P. Siegfried
+(2012), <a href="http://isedj.org/2012-10/N4/ISEDJv10n4p24.html">
+"Whatever Happened to Richard Reid's List of First Programming Languages?"</a>,
+<b>Information Systems Education Journal</b>, <b>10(4)</b>, pp 24-30.
+<a href="http://isedj.org/2012-10/">http://isedj.org/2012-10/</a>
+ISSN: 1545-679X. (A preliminary version appears in <b>The Proceedings of ISECON
+2011</b> v 28, n1681) 
+</p><p>Robert M. Siegfried, Joseph J. DiLallo, Patrick J. Breitwieser, Merry
+Christien Enriquez, And Robert A Stoll, "<a href="https://home.adelphi.edu/~siegfried/AmerCollHomePgs.pdf">
+Are American College Homepages Accessible? Does It Matter?</a>", <b>Proceedings
+of the 2010 International Conference on Frontiers in Education: Computer
+Science and Computer Engineering - FECS '10</b> (July 12-15, 2010, Las Vegas,
+Nevada, USA), Hamid R. Arabnia and Victor A. Clincy eds., CSREA Press, 2010,
+ p. 355-360.</p>
+
+<p>Joseph J. DiLallo and Robert M. Siegfried (2009), "The Accessibility of
+College and University Home Pages in the State of New York", 
+<a href="http://jisar.org/"><b>Journal of Information Systems Applied
+Research</b></a>, 2(4), <a href="http://jisar.org/2/4/"> http://jisar.org/2/4
+</a>.  <i>ISSN: 1946-1836</i>.  (Also appears in <b>Proceedings of CONISAR
+2008</b> §3132).
+</p><p>Robert M. Siegfried, David Chays, and Katherine G. Herbert,
+<a href="https://home.adelphi.edu/~siegfried/Consensus.pdf">"Will There Ever Be Consensus on CS1?"</a>,
+<b>Proceedings of the 2008 International Conference on
+Frontiers in Education: Computer Science and Computer Engineering - FECS
+'08</b> (July 14-17, 2008, Las Vegas, Nevada, USA), Hamid R. Arabnia, Victor
+A. Clincy and Nasser Tadayoon eds., CSREA Press, 2008,  p. 18-23.
+
+</p><p>Robert M Siegfried and Allan S Ashley,
+<a href="http://proc.isecon.org/2006/3334/index.html">"Is it Theft or Sampling?
+Student Attitudes on the Copying of Commercial Software and Music,</a>" 
+<b>The Proceedings of ISECON 2006</b>, v 23 (Dallas, Texas, November 2-5, 2006) 
+§3334.  ISSN: 1542-7382.
+
+</p><p>Kenneth G. Franqueiro and Robert M. Siegfried,
+Poster: <a href="https://home.adelphi.edu/~siegfried/Assets2006Poster.ppt">Designing a Scripting Language to Help
+the Blind Program Visually</a>."
+<a href="https://home.adelphi.edu/~siegfried/Assets2006PosterXabstrct.pdf">Extended Abstract</a> appearing in
+<b>Proceedings of the Eighth International ACM
+SIGACCESS Conference on Computers and Accessibility</b> (Portland, OR), 
+October 23-25, p. 241-242.
+
+</p><p>Robert M. Siegfried, <a href="https://home.adelphi.edu/~siegfried/BlindOpportunities.pdf">"Visual Programming
+and the Blind: The Challenge and the Opportunity</a>,
+<b>ACM SIGCSE Bulletin 38(1)</b>, 2006, p. 275-278.
+
+</p><p>Robert M. Siegfried, Denis Diakoniarakis, Kenneth G. Franqueiro, and Amol
+Jain, <a href="https://home.adelphi.edu/~siegfried/extending.pdf">"Extending A Scripting Language For Visual Basic
+Forms"</a>, <b>ACM SIGPLAN Notices 40(11)</b>, November 2005, pp. 37-40. 
+
+</p><p>John Paul Wallace and Robert M. Siegfried, "Pasty Welds and Deformation
+Analysis on Welded Tube Using Eddy Currents", <b>Electromagnetics in Materials
+Processing</b>, Organized by Robert W. Hyers, Douglas M. Matson and Daniel J.
+Williams, Materials Science &amp; Technology 2005, p. 101-107.
+
+</p><p>Robert M. Siegfried, Denis Diakoniarakis and Kenneth G. Franqueiro,
+<a href="https://home.adelphi.edu/~siegfried/VBForTheBlind.pdf">"Making Visual Programming Accessible to the
+Blind"</a>, <b>Proceedings of the 2005 International Conference on Computers
+For People With Special Needs - CPSN'05</b> (June 20-23, Las Vegas, Nevada,
+USA), Hamid R. Arabnia, ed., CSREA Press, 2005, p. 47-53.
+
+</p><p>Robert M. Siegfried, <a href="https://home.adelphi.edu/~siegfried/ETIN2004.pdf">"Student Attitudes on Software
+Piracy and Related Issues of Computer Ethics"</a>, <b>Ethics and Information
+Technology 6</b> (2004), p.215-222.</p>
+
+<p>Robert M. Siegfried, Denis Diakoniarakis and Uchechukwu Obianyo-Agu (2005), 
+"Teaching The Blind To Program Visually", <b>
+<a href="http://isedj.org/">Information Systems Education
+Journal</a> 3(23)</b> <a href="http://isedj.org/3/23/index.html">http://isedj.org/3/23/</a>
+<i>ISSN: 1545-679X</i> (Also appears in <b>Proceedings of ISECON 2004</b>:
+§3265).</p>
+
+<p>John Paul Wallace, Robert M. Siegfried and Jerome Dunn, "Titanium Eddy
+Current Measurements", <b>Cost-Affordable Titanium: Symposium Dedicated to
+Professor Harvey Flower</b>, F.H. (Sam) Froes, M. Ashraf Imam, and Derek
+Fray, editors, TMS, 2004, pp.151-157.
+
+</p><p>Robert M. Siegfried, Adam M. Wittenstein and Tashi Sharma,
+<a href="https://home.adelphi.edu/~siegfried/frosh2.pdf">"An Automated Systems for Course Selection and
+Scheduling"</a>, <b>Journal of
+Computing Sciences in Colleges 18(3)</b>, February 2003, pp. 17-25.
+
+</p><p>Robert M. Siegfried, <a href="https://home.adelphi.edu/~siegfried/mystuff/SCRIPTLANG.doc">"A Scripting Language To Help
+The Blind To Program Visually"</a>, <b>ACM SIGPLAN Notices 37(2)</b>, February 2002, pp. 53-56. 
+
+</p><p>Robert M. Siegfried, <a href="http://proc.isecon.org/2001/07c/index.html">
+"What's Wrong With Napster? A Study of Student
+Attitudes on Downloading Music and Pirating Software"</a>,
+<b>Conference Proceedings, ISECON2001</b>, Cincinnati Ohio, November 1-4, 2001,
+(published electronically on CD) Don Colton, Susan Feather, Michael Pyne,
+and William Tastle, eds., Session 7c.
+
+</p><p>Robert M. Siegfried, <a href="https://home.adelphi.edu/~siegfried/Jason%20paper.pdf">"The JASON Programming
+Language, An Aid in Teaching Compiler Construction"</a>, <b>Proceedings of the
+Fourteenth Annual Eastern Small College Computing Conference(October 1998)</b>,
+pp. 244-258. 
+
+
+</p><p>Robert M. Siegfried, <a href="https://home.adelphi.edu/~siegfried/FirstFrosh.pdf">"FROSH: An Expert System for
+Freshman Advisement"</a>,<b>Journal of Computing in Small Colleges, Volume 9,
+Number 2</b> (November 1993), pp. 88-98. 
+
+
+</p><p>John P. Wallace, Chibuike Iheagwara, and Robert M. Siegfried, "Application
+of Real Time Inverse Eddy Current Analysis", <b>Review of Progress In
+Quantitative Nondestructive Evaluation, Volume 11A (1991)</b> pp. 273- 280,
+D. O. Thompson and D. E. Shimenti eds., Plenum Press, New York. 
+
+</p><p>J. P. Wallace, D. C. Kunerth, R. M. Siegfried, and T. L. VanderWert, "High
+Temperature Eddy Current Measurement and Analysis", <b>Processing ISA '82: 1982
+International Conference of the Instrument Society of America</b>, 1983,
+pp. 309-321. 
+
+</p><p>J. P. Wallace, D. C. Kunerth, and R. M. Siegfried, "Eddy Current
+Measurements in Steel Processing,", <b>Physics in the Steel Industry (APS/AISI,
+Lehigh University, 1981)</b>, Fred C. Schwerer, ed., American Institute of
+Physics, New York, 1982. 
+
+</p><p>R. M. Siegfried, J. P. Wallace, G. A. Boser, and D. C. Kunerth,
+"Quantitative Models for Eddy Current Analysis of Metal Solidification",
+<b>Nondestructive Evaluation: Microstructural Characterization and Reliability
+Strategies</b>, Otto Buck and Stanley M. Wolf, eds., The Metallurgical Society
+of AIME, Warrendale, PA, 1981, pp. 233-252. 
+
+
+</p><p>J. P. Wallace, D. C. Kunerth, and R. M. Siegfried, "An Eddy Current Study of
+Casting", <b>Eddy Current Characterization of Materials and Structures ASTM
+STP 722</b>, George Free and George Birnbaum, eds., American Society for Testing
+and Materials, Philadelphia, 1981, pp. 173-190. 
+</p>
+
+					</div>    
+
+
+
+
+
+
+				</div>
+				<!-- /.container-fluid -->
+
+
+
+				
+
+			</div>
+			<!-- /.content-wrapper -->
+
+		</div>
+
+
+		<!-- Footer -->
+		<footer style="background-color: rgb(79, 44, 29);color: white;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+					</div>
+					<div class="col-md-4 " >
+						<span class="copyright"> Robert M. Siegfried<br>
+							Dept. of Mathematics and Computer Science<br>
+							Adelphi University<br>
+							Garden City, NY 11530<br>
+							(516)877-4482<br>
+							<a href="mailto:siegfrie@adelphi.edu">
+							Write Mail</a>
+						</span>
+					</div>
+
+
+				</div>
+			</footer>
+
+			<!-- Scroll to Top Button-->
+			<a class="scroll-to-top rounded" href="#page-top">
+				<i class="fas fa-angle-up"></i>
+			</a>
+
+
+			<!-- Bootstrap core JavaScript-->
+			<script src="vendor/jquery/jquery.min.js"></script>
+			<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+			<!-- Core plugin JavaScript-->
+			<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+			<!-- Page level plugin JavaScript-->
+			<script src="vendor/chart.js/Chart.min.js"></script>
+			<script src="vendor/datatables/jquery.dataTables.js"></script>
+			<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+			<!-- Custom scripts for all pages-->
+			<script src="js/sb-admin.min.js"></script>
+
+			<!-- Demo scripts for this page-->
+			<script src="js/demo/datatables-demo.js"></script>
+			<script src="js/demo/chart-area-demo.js"></script>
+
+		</body>
+
+		</html>

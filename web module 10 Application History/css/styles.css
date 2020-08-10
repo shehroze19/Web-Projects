@@ -1,0 +1,43 @@
+body {
+	padding-top: 50px;
+	background:url(../img/iframe_back.jpg) no-repeat top center; 
+}
+.em-text{color:green !important;
+}
+
+.jumbotron{
+	background:url(../img/background2.jpg) no-repeat top center; 
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	color: #fff;
+	height: 370px;
+	overflow:none;
+	margin-bottom:0 !important;
+	
+}
+
+.jumbotron .reward-picture{
+	height: 228px;
+	padding-top:50px !important;
+}
+
+
+
+
+@media(max-width:500px){
+
+
+	.jumbotron{
+		background-image: none;
+		background-color: cyan;
+	}
+
+	.jumbotron img.reward-picture{
+		height: 0px;
+		padding-top: 0px;
+	}
+
+
+
+}

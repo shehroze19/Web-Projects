@@ -1,0 +1,515 @@
+<?php
+include('Connection.php');
+ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="Application History" content="">
+	<meta name="Shehroze" content="">
+
+
+	<title>Details</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+	<!-- Custom styles for this template -->
+	
+
+
+
+</head>
+
+<body>
+
+	<div class="jumbotron">
+		<div class="container">
+
+			<form action="form_complete.php" method="post" class="jumbotron">
+
+
+
+				<div class="form-group row">
+
+					<label for="example-text-input" class="col-2 col-form-label">Application Form: </label>
+				</div>
+
+
+				<div class="form-group row">
+					<div class="panel-heading btn-info">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse0">
+								<h3>General Details</h3></a>
+							</h4>
+						</div>
+						<div id="collapse0" class="panel-collapse collapse">
+							<div class="panel-body">
+
+
+
+								<div class="form-group row">
+									<label for="example-text-input" class="col-2 col-form-label">Type of Advanced Standing</label>
+									<div class="col-10">
+
+										<div class="radio">
+											<label><input type="radio" value="G Transfer" name="optradio" required>General Credit Transfer</label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" value="S Transfer" name="optradio">Specific Credit Transfer</label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" value="B Transfer" name="optradio">Block Credit Transfer</label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" value="Speci Transfer" name="optradio">Specific & Block Credit Transfer</label>
+										</div>
+
+
+									</div>
+								</div>
+
+
+
+								<div class="form-group row">
+									<label for="example-text-input" class="col-2 col-form-label">I am Applying as</label>
+									<div class="col-10">
+
+
+
+
+										<div class="radio">
+											<label><input type="radio" value="N Applicant" name="optradio2" required>Future Student (New Applicant) </label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" value="C Enrolled" name="optradio2">Currently Enrolled Student</label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" value="Future Student" name="optradio2">Future Student(International)</label>
+										</div>
+
+
+
+
+									</div>
+								</div>
+
+
+
+								<div class="form-group row">
+									<label for="example-text-input" class="col-2 col-form-label">Basis of Credit</label>
+									<div class="col-10">
+
+
+
+										<div class="checkbox">
+											<label class="checkbox"><input type="checkbox" name="optradio3" value="Prior Exp">Prior Experience</label>
+											<label class="checkbox"><input type="checkbox" name="optradio4" value="Work Exp">Work Experience</label>
+
+										</div>
+
+									</div>
+								</div>
+
+
+
+
+								<div class="form-group row">
+									<label for="example-text-input" class="col-2 col-form-label">Previous Institution</label>
+									<div class="col-10">
+
+
+
+										<div class="container">
+											<label class="checkbox"><input type="text" name="prev_inst" ></label>
+
+
+										</div>
+
+									</div>
+								</div>
+
+
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+
+
+	
+	<div class="form-group row">
+						<div class="panel-heading btn-info">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+									<h3>Personal Details</h3></a>
+								</h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse">
+								<div class="panel-body">
+
+
+
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Student ID</label>
+										<div class="col-10">
+											<input class="form-control" type="text" placeholder="ID" name="student_id" required>
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">First Name</label>
+										<div class="col-10">
+											<input class="form-control" type="text" placeholder="Name" name="student_name" required>
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Family Name</label>
+										<div class="col-10">
+											<input class="form-control" type="text" name="family_name" placeholder="Name" required="">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Fathers Name</label>
+										<div class="col-10">
+											<input class="form-control" type="text" name="fathers_name" placeholder="Name" required="">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Year of Study</label>
+										<div class="col-10">
+											<input class="form-control" type="date" name="date_year_of_study" placeholder="Name" required="">
+										</div>
+									</div>
+
+
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Date of Birth</label>
+										<div class="col-10">
+											<input class="form-control" name="date_of_birth" type="date" required>
+										</div>
+									</div>
+
+
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Email</label>
+										<div class="col-10">
+											<input class="form-control" name="email1" type="email" placeholder="email" required>
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Mobile Number</label>
+										<div class="col-10">
+											<input class="form-control" type="tel" name="mobile_n" placeholder="+92...." required>
+										</div>
+									</div>
+
+
+
+									<div class="form-group row">
+										<label  class="col-2 col-form-label">Are you An International Student?</label>
+										<div class="radio">
+											<label class="radio-inline"><input type="radio" name="it_student" value="Yes">Yes</label>
+											<label class="radio-inline"><input type="radio" name="it_student" value="No">No</label>
+
+										</div>
+										
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+						<div class="form-group row">
+							<div class="panel-heading btn-info">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+										<h3>Course Details</h3></a>
+									</h4>
+								</div>
+								<div id="collapse2" class="panel-collapse collapse">
+									<div class="panel-body">
+
+
+
+
+
+
+
+										<div class="form-group row">
+											<label  class="col-2 col-form-label">Name of Instititute</label>
+											<div class="col-10">
+												<input class="form-control" type="text" name="name_of_insti" placeholder="Instititute" required>
+											</div>
+										</div>
+
+
+										<div class="form-group row">
+											<label  class="col-2 col-form-label">Course Title</label>
+											<div class="col-10">
+												<input class="form-control" name="course_title" type="text" required>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label  class="col-2 col-form-label">Course Code</label>
+											<div class="col-10">
+												<input class="form-control" name="course_code" type="text" required>
+											</div>
+										</div>
+
+
+
+										<div class="form-group row">
+											<label  class="col-2 col-form-label">Course Starting Date</label>
+											<div class="col-10">
+												<input class="form-control" name="starting_date" type="date" required>
+											</div>
+										</div>
+
+
+										<div class="form-group row">
+											<label  class="col-2 col-form-label">Course Ending Date</label>
+											<div class="col-10">
+												<input class="form-control" name="ending_date" type="date" required>
+											</div>
+										</div>
+
+
+										<div class="form-group row">
+											<label  class="col-2 col-form-label">Country</label>
+											<div class="col-10">
+												<input class="form-control" type="text" name="country" placeholder="Country" required="">
+											</div>
+										</div>
+
+
+										<div class="form-group row">
+											<label  class="col-2 col-form-label">Location</label>
+											<div class="col-10">
+												<input class="form-control" type="text" name="Location" placeholder="Location" required>
+											</div>
+										</div>
+
+
+										
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="form-group row">
+								<div class="panel-heading btn-info">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+											<h3>Claim For Credit</h3></a>
+										</h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+
+
+
+
+
+
+
+											<div class="form-group row">
+												<label  class="col-2 col-form-label">OTHER LEARNING – E.G. PAIDWORK</label>
+												<div class="col-10">
+													<p>
+														<h6>Other learning related non-formal learning and experience that relates the unit(s) of study for which recognition is being sought. Please
+															attach a statement linking your experience to the learning outcomes of the unit/s concerned.The claimfor advanced standingmay draw upon:</h6>
+															<ul>
+																<li>An employment history detailing position descriptions and letters ofsupport from immediate supervisors</li>
+																<li>Certificates received from voluntary or work organisations</li>
+																<li>Awards, prizes and other achievements</li>
+																<li>Contributionsto the community or activities which are relevant to the selected course ofstudy</li>
+
+															</p>
+														</ul>
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">EMPLOYMENT HISTORY</label>
+													<div class="col-10">
+
+													</div>
+												</div>
+
+
+
+
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">Name of Company</label>
+													<div class="col-10">
+														<input class="form-control" type="text" name="name_of_comp" placeholder="Name" required="">
+													</div>
+												</div>
+
+
+												
+
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">Dates Worked from</label>
+													<div class="col-10">
+														<input class="form-control" name="date_worked_from" type="date" required>
+														<label  class="col-2 col-form-label">To</label>
+														<input class="form-control" name="date_worked_to" type="date" required>
+													</div>
+												</div>
+
+
+
+
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">Position and Duties</label>
+													<div class="col-10">
+														<input class="form-control" type="text" name="position_and_duties" placeholder="Position" required>
+													</div>
+												</div>
+
+
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">OTHER LEARNING (E.G. LIFE EXPERIENCE, VOLUNTARYWORK, ETC.</label>
+													<div class="col-10">
+
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label  class="col-2 col-form-label">In your opinion, whatskills and knowledge have you acquired that related this program/course?</label>
+													<div class="col-10">
+														<textarea class="form-control" name="learnng_exp" > </textarea>
+													</div>
+												</div>
+
+
+
+											</div>
+										</div>
+									</div>
+
+
+
+
+
+
+
+									<div class="form-group row">
+										<div class="panel-heading btn-info">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+													<h3>List of Supporting Evidence</h3></a>
+												</h4>
+											</div>
+											<div id="collapse4" class="panel-collapse collapse">
+												<div class="panel-body">
+
+
+
+													<div class="form-group row">
+														<label  class="col-2 col-form-label">Evidence should be a close match with the learning outcomes/objectives for the unit(s) of study for which Advanced Standing is sought.</label>
+														<div class="col-10">
+
+														</div>
+													</div>
+
+
+
+
+
+													<div class="form-group row">
+														<label  class="col-2 col-form-label"></label>
+														<div class="col-10">
+															<textarea placeholder="Details" name="evidence_details" class="form-control"></textarea>
+														</div>
+													</div>
+
+
+													<div class="form-group row">
+														<label  class="col-2 col-form-label">CERTIFICATES,PRIZES, AWARDS OR OTHER ACHIEVEMENTS</label>
+														<div class="col-10">
+															<input class="form-control" type="text" name="ceritificates" placeholder="Name">
+														</div>
+													</div>
+
+
+													<div class="form-group row">
+														<label  class="col-2 col-form-label">I hereby certify that the above information given are true and correct as to the best of my knowledge.</label>
+														<div class="col-10">
+															<input class="form-control" name="check_forall_values" value="yes" type="checkbox" required>
+														</div>
+													</div>
+
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+
+
+										<div class="form-group row">
+											<div class="col-10">
+												<input type="submit" value="Submit Application" class="btn btn-lg btn-primary">
+											</div>  
+										</div>  
+
+									</form>
+
+								</div>
+							</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

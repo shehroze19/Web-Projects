@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Robert M. Siegfried, Ph. D.</title>
+
+	<!-- Bootstrap core CSS-->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template-->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Page level plugin CSS-->
+	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+	<!-- Custom styles for this template-->
+	<link href="css/sb-admin.css" rel="stylesheet">
+
+
+	<script>
+
+		function changeSize(n) {
+
+
+
+			var all = document.getElementsByClassName('change_color');
+			for (var i = 0; i < all.length; i++) {
+				all[i].style.fontSize = n.value + 'px';
+			}
+
+
+
+		}
+
+		function changeColor(n) {
+
+			var all = document.getElementsByClassName('change_color');
+			for (var i = 0; i < all.length; i++) {
+				all[i].style.color = n.value;
+			}
+
+		}
+
+
+
+
+		function changeBGColor(n) {
+
+			var s = document.getElementById('page-top');
+			s.style.backgroundColor  = n.value;
+		}
+
+
+	</script>
+
+
+
+	<style>
+		#logo{
+
+
+			background-image: url("img/adelphi.png");
+			width: 208px;
+			height: 100px;
+
+
+		}
+		#logo:hover{
+			background-image: url("img/hover_logo.png");
+		}
+
+		.changer{
+			color: white;
+
+		}
+
+
+		@media only screen and (max-width: 600px) {
+			#responsive_mobile_1{
+				display: none;
+			}
+			#responsive_mobile_2{
+				display: none;
+			}
+			
+		}
+
+		select { text-indent: 80px; }
+
+	</style>
+</head>
+
+<body id="page-top" >
+
+
+
+
+
+	<nav class="navbar navbar-expand  static-top" style="background-color:#4f2c1d;" >
+
+		<a class="navbar-brand mr-1" id="sidebarToggle" href="#"><div id="logo" height="100" width="208"></div>
+
+
+		</a> <i  style="color: gray;" class="fas fa-bars"></i>
+
+
+
+
+
+		<div id="responsive_mobile_1" class="col-md-2"></div>
+
+		<div id="responsive_mobile_2">
+
+			<table id="main_data">
+				<tbody>
+
+					<tr>
+						<td>
+							<h3 align="CENTER" ><i class="changer">Robert M. Siegfried, Ph. D.</i></h3>
+
+							<h5 class="text-center" ><a  href="http://academics.adelphi.edu/artsci/math" style="color: #ffb500"  target="_blank">Department of Mathematics and Computer Science</a></h5>
+
+							<h5 class="text-center"><a href="http://www.adelphi.edu/" style="color: #ffb500" target="_blank">Adelphi University</a>,
+								<a href="http://www.gardencityny.net/" style="color: #ffb500" target="_blank" >Garden City, NY  11530</a>,
+							</h5>
+
+
+						</td>
+					</tr>
+
+				</tbody></table>
+
+			</div>
+
+			<!-- Navbar Search -->
+			<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+				<div class="input-group">
+					<div class="input-group-append">
+
+					</div>
+				</div>
+			</form>
+
+		
+
+		</nav>
+
+		<div id="wrapper">
+
+			<!-- Sidebar -->
+			<ul class="sidebar navbar-nav">
+
+
+				<! –– drop down button for account settings -->
+				<li class="nav-item dropdown">
+					<!-- Button trigger modal -->
+					<a type="button" class="nav-link dropdown-toggle" data-toggle="modal" data-target="#exampleModal" aria-haspopup='true' aria-expanded='false'>
+						<i class='fas fa-cog'></i>
+						Page Settings
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">
+						<i class="fas fa-home"></i>
+						<span>Background</span>
+					</a>
+				</li>
+
+
+
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="schedule.html">
+						<i class="fas fa-calendar-alt"></i>
+						<span>Schedule</span>
+					</a>
+				</li>
+
+
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="teaching.html">
+						<i class="fas fa-chalkboard-teacher"></i>
+						<span>Teaching</span>
+					</a>
+				</li>
+
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="research.html">
+						<i class="fas fa-search"></i>
+						<span>Research</span>
+					</a>
+				</li>
+
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="publications.html">
+						<i class="fas fa-book"></i>
+						<span>Publications</span>
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="molly.html">
+						<i class="fas fa-project-diagram"></i>
+						<span>The Molly Project</span>
+					</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="personal.html">
+						<i class="fas fa-user-check"></i>
+						<span>Personal</span>
+					</a>
+				</li>
+
+
+				<li class="nav-item active">
+					<a class="nav-link" href="links.html">
+						<i class="fas fa-link"></i>
+						<span>Links</span>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">
+						<i class="fas fa-address-book"></i>
+						<span>Contact</span>
+					</a>
+				</li>
+
+
+
+				<li class='nav-item dropdown'>
+					<a class='nav-link dropdown-toggle' href='#' id='pagesDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+						<i class='fas fa-fw fa-folder'></i>
+						<span>Courses</span>
+					</a>
+					<div class='dropdown-menu' aria-labelledby='pagesDropdown'>
+						<h6 class='dropdown-header text-center'>Teaching Courses</h6>
+
+
+
+
+						<hr>
+						<a class='dropdown-item text-center' target="_blank" href="https://home.adelphi.edu/~siegfried/cs175/index.html">CSC 175 - Intermediate<br>Programming</a>
+
+
+						<hr>
+						<a class='dropdown-item text-center' target='_blank' href="https://home.adelphi.edu/~siegfried/cs453/index.html">CSC 453 - Operating<br>Systems</a>
+
+
+						<hr>
+						<a class='dropdown-item text-center' target="_blank" href="https://home.adelphi.edu/~siegfried/cs575/index.html">CSC 575 - Accessible<br>Computing</a>
+
+
+						<hr>
+						<a class='dropdown-item text-center' target='_blank' href="https://home.adelphi.edu/~siegfried/cs645/index.html">CSC 645 - Compiler<br>Construction</a>
+
+
+
+					</div>
+				</li>
+
+
+			</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div id="content-wrapper">
+
+				<div class="container-fluid">
+
+					<!-- Breadcrumbs--> 
+					<ol class='breadcrumb'>
+						<li class='breadcrumb-item'>
+							<a href='#'>Dashboard</a>
+						</li>
+						<li class='breadcrumb-item active'>links </li>
+
+					</ol>
+
+			
+
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Change Page Settings</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+
+
+									<div class="row">
+										<div  class="col-md-2">Font Size</div>
+										<div class="col-md-2">
+											<select class="form-control" class="text-center"  onchange="changeSize(this);">
+												<option class="text-center">4</option>
+												<option>8</option>
+												<option>12</option>
+												<option>16</option>
+												<option>20</option>
+												<option>24</option>
+												<option>28</option>
+												<option>32</option>
+												<option>36</option>
+												<option>40</option>
+												<option>44</option>
+												<option>48</option>
+												<option>52</option>
+												<option>56</option>
+												<option>58</option>
+											</select>
+										</div>
+
+										<hr>
+
+										<div  class="col-md-2" >Font Color</div>
+
+										<div class="col-md-2">
+											<input type="color" id="favcolor" class="form-control" name="favcolor" value="#ff0000" onchange="changeColor(this);">
+										</div>
+
+
+
+										<div  class="col-md-2">BG Color</div>
+
+										<div class="col-md-2">
+											<input type="color" id="favcolor" class="form-control" name="favcolor" value="#ff0000" onchange="changeBGColor(this);">
+										</div>
+
+										<div class="col-md-12"><br></div>
+										<div class="btn btn-block btn-primary"><a href="" style="color: black;">To reset page settings reload the page or click here</a></div>
+
+
+									</div>
+
+
+
+
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="change_color">
+
+
+<h3 class="normalhead">Links</h3>
+
+<p>I have a list of favorite sites, not including
+the sites linked to home page:
+</p><h4>Professional</h4>
+<p>Of interest to computer scientists:
+</p><ul><li><a href="http://www.nsf.gov/" target="_blank">National Science Foundation</a></li>
+<li><a href="http://www.acm.org/" target="_blank">The Association of Computing Machinery</a>,
+the nation's oldest professional society in Computer Science.</li>
+<li><a href="http://computer.org/" target="_blank">The IEEE Computer Society</a> -
+the <b><i>other</i></b> professional society</li>
+
+<li><a href="http://www.aitp.org/" target="_blank">AITP</a> - the
+Association of Information Technology Professionals, the professional
+organization of the Information Systems community</li></ul>
+<p>This online comics series should be of interest to anyone considering
+graduate school:
+</p><ul><li><a href="http://phdcomics.com/" target="_blank">Piled Higher And
+Deeper</a> -  a humorous look at grad school and the academic life</li></ul>
+
+<h4>Autism</h4>
+<p><b><i>Autism</i></b> is a developmental disorder that varies in severity
+and has become increasingly common.  While there is no cure, there are therapies
+that can help <i>enormously</i> in leading an autistic child to a more normal
+life.  The following sites provide information on autism as well as some leads
+to finding services in the Long Island area:
+</p><ul>
+<li><a href="http://autismspeaks.org/" target="_blank">Autism
+Speaks</a> - An organization recently started by Bob and Suzanne Wright to help find a cure for autism.</li>
+<li><a href="http://www.autism.org/" target="_blank">Center for the Study for
+Autism</a> - They provide mainly informational resources, but they are very
+good.</li>
+
+<li><a href="http://www.aspergers.com/" target="_blank">Asperger's Disorder
+home</a> - a page of resources for families and individuals
+with Aspergers Syndrome, a high-functioning developmental disorder akin to
+autism</li>
+<li><a href="http://www.autism-society.org/" target="_blank">Autism Society of
+America</a> - an organization started by the parents of autistic children 
+hat provides information and resources</li>
+<li><a href="http://www.nsasa.org/" target="_blank">The Nassau-Suffolk Chapter
+of the Autism Society</a></li>
+<li><a href="http://www.kulanukids.org/" target="_blank">Kulanu</a> - an
+organization within the Orthodox Jewish community of Long Island that makes
+an enormous difference in the lives of children with physical and
+developmental disabilities.</li>
+<li><a href="http://www.qsac.com/" target="_blank">QSAC</a> - Quality
+Services for Autism Community, which provides services for autistic
+children, in New York City and Long Island</li>
+</ul>
+<h4>News</h4>
+<p>Being something of a news junkie, here a few with up to date information
+worth reading:</p>
+<ul>
+<li><a href="http://ny1.com/" target="_blank">ny1.com</a>, a local Cable station
+specializing in New York City.</li>
+<li><a href="http://www.newsday.com/" target="_blank">Newsday</a>, the Newspaper of
+Long Island</li>
+
+<li><a href="http://newyork.cbslocal.com/" target="_blank">WCBS-AM NewsRadio 880</a> </li>
+<li><a href="http://www.jpost.com/" target="_blank">The Jerusalem Post</a> - The most
+objective
+source of news on the Middle East</li>
+<li><a href="http://www.foxnews.com/" target="_blank">Fox News</a> - The only cable news outlet that
+provides <b><i>honest</i></b> reporting on the Middle East</li>
+<li><a href="http://www.cnn.com/" target="_blank">Cable News Network</a></li></ul>
+
+<h4> Sports</h4> 
+<p>Being a Mets fan and Jets fan, I have to have these links:
+</p><ul>
+<li><a href="http://newyork.mets.mlb.com/NASApp/mlb/index.jsp?c_id=nym" target="_blank">
+The New York Mets Official Web Site</a>
+
+</li><li><a href="http://www.newyorkjets.com/" target="_blank">The New York Jets Official Web Site</a>
+</li></ul>
+
+<h4>Entertainment</h4>
+<p>I check out these pages from time to time:
+
+</p><ul><li><a href="http://www.hbo.com/" target="_blank">HBO's Web Page</a> - I'm a regular viewer.</li>
+<li><a href="http://startrek.com/" target="_blank">The Official Star Trek Page</a> - I've been a fan 
+for more years than I will admit to in public.</li></ul>
+
+<h4>Political</h4>
+<p>See how our democratic system works:
+</p><ul>
+<li><a href="http://www.whitehouse.gov/" target="_blank">The White House Web
+Site</a> - 
+This has far less propaganda than under the Republicans, and there is a lot
+of information worth looking through.</li>
+
+<li><a href="http://carolynmccarthy.house.gov/" target="_blank">Rep.
+Carolyn McCarthy</a>, whom I'm proud to call an Adelphi Alumna and
+<b><i>MY</i></b> representative in the House</li>
+<li>Our Senators, of whom I'm proud, whether the Right likes it or not:<ul>
+<li><a href="http://schumer.senate.gov/" target="_blank">Sen. Charles E.
+ Schumer</a></li>
+<li><a href="http://gillibrand.senate.gov/" target="_blank">Sen. Kirsten
+Gillibrand</a></li></ul>
+</li><li><a href="http://www.loc.gov/" target="_blank">The Library of Congress Web
+Site</a></li>
+
+<li><a href="http://www.governor.ny.gov/" target="_blank">Gov. Andrew
+Cuomo</a></li>
+
+<li>The New York State Legislature:<ul>
+<li><a href="http://www.senate.state.ny.us/">New York State Senate</a></li>
+<li><a href="http://www.senatordeanskelos.org/" target="_blank">Dean Skelos</a>
+- my State Senator</li>
+<li><a href="http://assembly.state.ny.us/" target="_blank">New York State
+Assembly</a></li><a href="http://assembly.state.ny.us/" target="_blank">
+</a><li><a href="http://assembly.state.ny.us/" target="_blank"></a><a href="http://assembly.state.ny.us/mem/?ad=020" target="_blank">Harvey 
+Weisenberg</a> - my Assemblyman</li></ul></li>
+<li><a href="http://www.nassaucountyny.gov/" target="_blank">Nassau County:</a>
+<ul><li>Our County Executive
+<a href="http://www.nassaucountyny.gov/agencies/CountyExecutive/index.html" target="_blank">
+Edward Mangano</a> - who seems to be returning the County to near-bankruptcy</li>
+<li><a href="http://www.nassaucountyny.gov/agencies/legis/index.html" target="_blank">
+The Nassau County Legislature</a></li>
+<li><a href="http://www.nassaucountyny.gov/agencies/legis/LD/04/index.html" target="_blank">
+Denise Ford</a> - My County Legislator</li></ul></li>
+
+
+<li><a href="http://townofhempstead.org/" target="_blank">Town of Hempstead</a>
+</li>
+</ul>
+<h4>Miscellaneous</h4>
+<p>
+These may be of common interest for a variety of reasons:
+</p><ul><li><a href="http://www.jewishlifeoncampus.com/">Jewish Student Center of
+Garden City</a> - A rabbi who listens and who is available for students - and
+student-planned activities</li>
+<li><a href="http://www.nycsubway.org/" target="_blank">www.nycsubway.org</a>, an
+unofficial Web Site that has lots of stuff the MTA has no interest in
+showing the public.</li>
+<li><a href="http://www.mta.info/" target="_blank">The MTA's Official Web Site</a></li>
+<li><a href="http://www.jewishmag.com/57mag/dhimmi/dhimmi.htm" target="_blank">
+www.dhimmi.org</a> - A page devoted to Islamic Tolerance</li></ul>
+
+					</div>    
+
+
+
+
+
+
+				</div>
+				<!-- /.container-fluid -->
+
+
+
+				
+
+			</div>
+			<!-- /.content-wrapper -->
+
+		</div>
+
+
+		<!-- Footer -->
+		<footer style="background-color: rgb(79, 44, 29);color: white;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+					</div>
+					<div class="col-md-4 " >
+						<span class="copyright"> Robert M. Siegfried<br>
+							Dept. of Mathematics and Computer Science<br>
+							Adelphi University<br>
+							Garden City, NY 11530<br>
+							(516)877-4482<br>
+							<a href="mailto:siegfrie@adelphi.edu">
+							Write Mail</a>
+						</span>
+					</div>
+
+
+				</div>
+			</footer>
+
+			<!-- Scroll to Top Button-->
+			<a class="scroll-to-top rounded" href="#page-top">
+				<i class="fas fa-angle-up"></i>
+			</a>
+
+
+			<!-- Bootstrap core JavaScript-->
+			<script src="vendor/jquery/jquery.min.js"></script>
+			<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+			<!-- Core plugin JavaScript-->
+			<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+			<!-- Page level plugin JavaScript-->
+			<script src="vendor/chart.js/Chart.min.js"></script>
+			<script src="vendor/datatables/jquery.dataTables.js"></script>
+			<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+			<!-- Custom scripts for all pages-->
+			<script src="js/sb-admin.min.js"></script>
+
+			<!-- Demo scripts for this page-->
+			<script src="js/demo/datatables-demo.js"></script>
+			<script src="js/demo/chart-area-demo.js"></script>
+
+		</body>
+
+		</html>

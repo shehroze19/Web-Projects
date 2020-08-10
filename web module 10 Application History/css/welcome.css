@@ -1,0 +1,29 @@
+body{
+    padding-top: 55px;
+  background: url(../image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+       padding-top: 120px;
+    }
+}
